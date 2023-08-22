@@ -1,0 +1,70 @@
+Security and Cryptography
+https://www.eecs.mit.edu/research/explore-all-research-areas/security-and-cryptography/
+
+Our research is focused on making future computer systems more secure.
+
+We bring together a broad spectrum of cross-cutting techniques for security, 
+from theoretical cryptography and programming-language ideas, to low-level hardware and 
+operating-systems security, to overall system designs and empirical bug-finding.  
+We apply these techniques to a wide range of application domains, such as blockchains, 
+cloud systems, Internet privacy, machine learning, and IoT devices, reflecting the 
+growing importance of security in many contexts.
+
+
+
+
+https://www.ojp.gov/ncjrs/virtual-library/abstracts/data-security-through-cryptography
+
+Data Security Through Cryptography
+NCJ Number 79425
+Date Published 1977
+Length 38 pages
+
+Annotation
+This manual describes the history and benefits of cryptography as a data security technique and 
+then details the implementation of cryptographic security measures in computerized information systems.
+
+Abstract
+An introduction reviews basic data security measures, including access control, journalizing and auditing,
+and concealment of information. The consequences of loss of data security are discussed, as are the burdens
+that new laws regarding privacy place on institutions that maintain files on individuals. Examples illustrate 
+cryptography's effectiveness in protecting data that passes outside a controlled or protected environment, 
+such as electronic funds transfers or wiretaps. The manual identifies factors that should be considered when 
+appraising the economic effects of a data loss versus the costs of installing extra security measures. 
+Following a brief history of cryptography from the ancient Egyptians to modern automatic devices, the basic
+transformation process which scrambles and modifies the input data according to a built-in algorithm is described. 
+The manual emphasizes that the computer lends itself to cryptography because of the logical nature of the algorithm, 
+producing inexpensive and effective data protection. A discussion of the general implementation considerations focuses 
+on key selection and key management, since a common key-controlled algorithm of known strength is recommended. 
+Operating environments and the unit of encipherment are covered. The implementation of cryptographic methods in
+communication security is explained for three levels -link, session, and private. Also addressed are file security cryptography, 
+data accuracy considerations, and the impact of lost keys. Diagrams and an index are included. The appendixes contain a summary 
+of data security features implemented in IBM products and a list of related IBM publications.
+
+
+
+
+Additional Details
+
+Corporate Author
+IBM Corporation AddressNeighborhood Road, Kingston, NY 12401, United States
+
+Sale Source
+IBM Corporation Address6400 Goldsboro Road, Bethesda, MD 20034, United States
+
+Language
+English
+
+Country
+United States of America
+
+Note
+File number S/370-34
+
+
+
+
+
+
+
+
