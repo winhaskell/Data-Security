@@ -1,0 +1,55 @@
+https://www.cloudflare.com/learning/ssl/lava-lamp-encryption/
+
+What does 'random' mean in the context of cryptography?
+
+In cryptography, random does not just mean statistically random; it also means unpredictable.
+
+Encrypted data should look like totally random data, since predictable data can be guessed. 
+If there is any pattern – if certain values are used for encryption more than others, or if 
+values appear in a certain order consistently – then mathematical analysis will pick up on 
+the pattern and allow an attacker to have a much easier time guessing the key used for encryption. 
+Essentially, if encrypted data is predictable, it might as well already be compromised.
+
+The process of encryption itself is a predictable one: Encrypted data plus the right key equals decrypted data, 
+and the decrypted data is the same as it was before it was encrypted. But the encryption keys used have to be unpredictable.
+
+To understand why unpredictability is so important, imagine two poker players: Bob always bets 
+when he has good cards and folds (declines to match other players' bets) when he has bad cards. 
+Alice, meanwhile, mixes up her betting strategy so that there's no discernable pattern to it: 
+sometimes she bets when she has good cards, sometimes she contents herself with matching other 
+players' bets, and sometimes she even bluffs by betting big when she has bad cards. When Alice 
+and Bob enter the same poker tournament, Alice lasts much longer than Bob does, because Bob is 
+too predictable. Opponents quickly figure out when Bob has good cards and react accordingly. 
+Even though they can't see his cards, they can discern roughly what cards he's holding.
+
+Similarly, even though attackers can't see the "cards" – or, the encrypted content – that's sent over a network, 
+they can guess it if the method for concealing the content is too predictable.
+
+Why can't computers create randomness?
+Computers run on logic. A computer program is based on if-then statements: If certain conditions are met, 
+then perform this specified action. The same input into a program results in the same output every time.
+
+This is by design. An input should lead to an expected output, not an unexpected one. Imagine the chaos if 
+a printer printed random text that was different from the text in the document that was sent to the printer, 
+or if smartphones were to call a different phone number than the one the user entered. Computers are only 
+useful because of their (relative) reliability and predictability. However, that predictability is a liability 
+when it comes to generating secure encryption keys.
+
+Some computer programs are good at simulating randomness, but not good enough at it for creating encryption keys.
+
+
+How can a computer use random, real-world inputs to generate random data?
+A software program called a pseudorandom number generator (PRNG) is able to take an unpredictable input and
+use it to generate unpredictable outputs. Theoretically, a PRNG can produce unlimited random outputs from a random input.
+
+
+Such an algorithm is called "pseudorandom" and not "random" because its outputs are not actually completely random. 
+
+Why is this the case? There are 2 main reasons:
+
+When given the same seed to start with twice in a row, a PRNG will produce the exact same results.
+It's difficult to prove if the results it generates will be completely random the entire time (if the PRNG runs indefinitely).
+Because of reason No. 2, the algorithm continually needs new inputs of randomness. A random input is known as a "cryptographic seed."
+
+
+
